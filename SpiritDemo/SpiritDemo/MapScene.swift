@@ -27,7 +27,7 @@ class MapScene: SKScene {
         print("背景position：")
         print(NSStringFromCGPoint(back.position))
         
-        stairNumber = 3 //小岛数
+        stairNumber = 6 //小岛数
         //长岛背景
         let stairTexture = MapTexture().stair()
         let halfTextureWidth = stairTexture.size().width/2
@@ -40,6 +40,7 @@ class MapScene: SKScene {
         print(NSStringFromCGRect(vp))
         let skyNode = SKShapeNode(rect: vp)
         skyNode.fillColor = SKColor(red:0.38, green:0.60, blue:0.65, alpha:1.0)
+        skyNode.fillColor = SKColor.clear
         skyNode.strokeColor = SKColor.clear
         skyNode.zPosition = 1
         //以父视图的position为原点的相对位置,长方形节点rect使用后默认position为0,0（此时相对于父节点）
@@ -61,7 +62,6 @@ class MapScene: SKScene {
             print("单岛frame：" + NSStringFromCGRect(stair.frame))
             print("单岛position：" + NSStringFromCGPoint(stair.position))
         }
-    
         
     }
     
@@ -74,7 +74,8 @@ class MapScene: SKScene {
             lastTouchPoint_x = nil
             minPosition_x = MIN_POSITION_X
             let transNumber = CGFloat(stairNumber!-1)
-            maxPosition_x = -((stairTextureWidth!/2) * transNumber + stairTextureWidth!)
+            maxPosition_x = -(transNumber) * stairTextureWidth!
+        
         }
         
     }
