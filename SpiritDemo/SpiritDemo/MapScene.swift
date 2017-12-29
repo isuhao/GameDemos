@@ -55,7 +55,7 @@ class MapScene: SKScene {
         
         //中间长岛
         for item in 1...stairNumber! {
-            let stair = SKSpriteNode.init(texture: stairTexture)
+            let stair = IslandNode.init(texture: stairTexture)
             stair.position = CGPoint(x: (stairsLeading +  halfTextureWidth * CGFloat(item*2 - 1)),
                                      y: stairTexture.size().height/2 + stairsTop)
             self.stairsBack!.addChild(stair)

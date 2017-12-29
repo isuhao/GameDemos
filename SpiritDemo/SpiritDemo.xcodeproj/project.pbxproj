@@ -23,6 +23,8 @@
 		CE2BF01D1FF5D56A00F4B2EC /* map.1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2BF01A1FF5D56900F4B2EC /* map.1.png */; };
 		CE2BF0201FF5D5EA00F4B2EC /* MapTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF01F1FF5D5EA00F4B2EC /* MapTexture.swift */; };
 		CE2BF0221FF64C8F00F4B2EC /* IslandNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF0211FF64C8F00F4B2EC /* IslandNode.swift */; };
+		CE2BF0241FF6581D00F4B2EC /* BubbleNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF0231FF6581D00F4B2EC /* BubbleNode.swift */; };
+		CE2BF0261FF658F600F4B2EC /* LessonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2BF0251FF658F600F4B2EC /* LessonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		CE2BF01A1FF5D56900F4B2EC /* map.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.1.png; sourceTree = "<group>"; };
 		CE2BF01F1FF5D5EA00F4B2EC /* MapTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapTexture.swift; path = SpiritDemo/MapTexture.swift; sourceTree = SOURCE_ROOT; };
 		CE2BF0211FF64C8F00F4B2EC /* IslandNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandNode.swift; sourceTree = "<group>"; };
+		CE2BF0231FF6581D00F4B2EC /* BubbleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleNode.swift; sourceTree = "<group>"; };
+		CE2BF0251FF658F600F4B2EC /* LessonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				62C2281A1FDCC7C0009DAC16 /* GameScene.sks */,
 				62C2281C1FDCC7C0009DAC16 /* Actions.sks */,
 				CE2BF0161FF5D4F000F4B2EC /* StairsNode.swift */,
+				CE2BF0231FF6581D00F4B2EC /* BubbleNode.swift */,
+				CE2BF0251FF658F600F4B2EC /* LessonModel.swift */,
 				CE2BF0211FF64C8F00F4B2EC /* IslandNode.swift */,
 				CE2BF0121FF5D4E600F4B2EC /* MapScene.swift */,
 				62C2281E1FDCC7C0009DAC16 /* GameScene.swift */,
@@ -207,9 +213,11 @@
 				CE2BF0171FF5D4F000F4B2EC /* StairsNode.swift in Sources */,
 				CE2BF0141FF5D4E600F4B2EC /* MapScene.swift in Sources */,
 				CE2BF0201FF5D5EA00F4B2EC /* MapTexture.swift in Sources */,
+				CE2BF0241FF6581D00F4B2EC /* BubbleNode.swift in Sources */,
 				62C2281F1FDCC7C0009DAC16 /* GameScene.swift in Sources */,
 				CE2BF0221FF64C8F00F4B2EC /* IslandNode.swift in Sources */,
 				62C228211FDCC7C0009DAC16 /* GameViewController.swift in Sources */,
+				CE2BF0261FF658F600F4B2EC /* LessonModel.swift in Sources */,
 				6220C4AC1FF5484800356F46 /* mario.swift in Sources */,
 				62C228191FDCC7C0009DAC16 /* AppDelegate.swift in Sources */,
 			);

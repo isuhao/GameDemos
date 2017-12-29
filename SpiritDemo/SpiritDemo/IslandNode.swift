@@ -11,4 +11,11 @@ import SpriteKit
 
 class IslandNode: SKSpriteNode {
     
+    var bubbleNode: BubbleNode?
+    var markNode: SKSpriteNode?
+    
+    public func addLesson(model: LessonModel) {
+        
+    }
+    
 }
