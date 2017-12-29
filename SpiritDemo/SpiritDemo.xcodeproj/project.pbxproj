@@ -51,7 +51,7 @@
 		CE2BF0161FF5D4F000F4B2EC /* StairsNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StairsNode.swift; sourceTree = "<group>"; };
 		CE2BF0191FF5D56900F4B2EC /* map.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = map.plist; sourceTree = "<group>"; };
 		CE2BF01A1FF5D56900F4B2EC /* map.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.1.png; sourceTree = "<group>"; };
-		CE2BF01F1FF5D5EA00F4B2EC /* MapTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapTexture.swift; path = SpiritDemo/MapTexture.swift; sourceTree = SOURCE_ROOT; };
+		CE2BF01F1FF5D5EA00F4B2EC /* MapTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapTexture.swift; path = SpiritDemo/Resourse/MapTexture.swift; sourceTree = SOURCE_ROOT; };
 		CE2BF0211FF64C8F00F4B2EC /* IslandNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IslandNode.swift; sourceTree = "<group>"; };
 		CE2BF0231FF6581D00F4B2EC /* BubbleNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleNode.swift; sourceTree = "<group>"; };
 		CE2BF0251FF658F600F4B2EC /* LessonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonModel.swift; sourceTree = "<group>"; };
@@ -102,10 +102,7 @@
 		62C228171FDCC7C0009DAC16 /* SpiritDemo */ = {
 			isa = PBXGroup;
 			children = (
-				CE2BF01F1FF5D5EA00F4B2EC /* MapTexture.swift */,
-				CE2BF0181FF5D56900F4B2EC /* map.atlasc */,
-				6220C4AB1FF5484800356F46 /* mario.atlasc */,
-				6220C4AA1FF5484700356F46 /* mario.swift */,
+				CE2BF02E1FF6774400F4B2EC /* Resourse */,
 				62C228181FDCC7C0009DAC16 /* AppDelegate.swift */,
 				62C2281A1FDCC7C0009DAC16 /* GameScene.sks */,
 				62C2281C1FDCC7C0009DAC16 /* Actions.sks */,
@@ -131,6 +128,17 @@
 				CE2BF01A1FF5D56900F4B2EC /* map.1.png */,
 			);
 			path = map.atlasc;
+			sourceTree = "<group>";
+		};
+		CE2BF02E1FF6774400F4B2EC /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				CE2BF01F1FF5D5EA00F4B2EC /* MapTexture.swift */,
+				CE2BF0181FF5D56900F4B2EC /* map.atlasc */,
+				6220C4AA1FF5484700356F46 /* mario.swift */,
+				6220C4AB1FF5484800356F46 /* mario.atlasc */,
+			);
+			path = Resourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

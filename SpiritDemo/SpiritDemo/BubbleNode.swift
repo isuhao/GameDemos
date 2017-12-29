@@ -19,6 +19,35 @@ class BubbleNode: SKSpriteNode {
     var bubbleBack: SKSpriteNode?
     var titleLabel: SKLabelNode?
     
+    var markNode: SKSpriteNode?
+    
+    func setup() {
+        starNode1 = SKSpriteNode.init(texture: MapTexture().star())
+        
+    }
+    
+    func switchStarNodeState(starNode: inout SKSpriteNode, on: Bool) {
+        if on {
+            starNode.texture = MapTexture().star()
+        } else {
+            starNode.texture = MapTexture().startno()
+        }
+    }
+    
     
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

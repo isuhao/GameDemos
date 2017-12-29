@@ -29,7 +29,7 @@ class MapScene: SKScene {
         
         stairNumber = 6 //小岛数
         //长岛背景
-        let stairTexture = MapTexture().stair()
+        let stairTexture = MapTexture().stair_stip()
         let halfTextureWidth = stairTexture.size().width/2
         stairTextureWidth = halfTextureWidth * 2
         print("小岛纹理大小：" + NSStringFromCGSize(stairTexture.size()))
@@ -59,6 +59,8 @@ class MapScene: SKScene {
             stair.position = CGPoint(x: (stairsLeading +  halfTextureWidth * CGFloat(item*2 - 1)),
                                      y: stairTexture.size().height/2 + stairsTop)
             self.stairsBack!.addChild(stair)
+            stair.setupBrook()
+            
             print("单岛frame：" + NSStringFromCGRect(stair.frame))
             print("单岛position：" + NSStringFromCGPoint(stair.position))
         }
