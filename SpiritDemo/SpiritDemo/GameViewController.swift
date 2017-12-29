@@ -15,6 +15,18 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let sceneNode = MapScene(size: view.frame.size)
+//        sceneNode.interactionDelegate = self;
+        
+        if let view = self.view as! SKView? {
+            view.presentScene(sceneNode)
+            view.ignoresSiblingOrder = true
+            view.showsPhysics = true
+            view.showsFPS = true
+            view.showsNodeCount = true
+        }
+        
+        return;
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
         if let scene = GKScene(fileNamed: "GameScene") {
