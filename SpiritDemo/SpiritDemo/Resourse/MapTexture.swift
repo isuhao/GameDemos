@@ -1,6 +1,6 @@
 // ---------------------------------------
 // Sprite definitions for 'map'
-// Generated with TexturePacker 4.6.1
+// Generated with TexturePacker 4.4.0
 //
 // http://www.codeandweb.com/texturepacker
 // ---------------------------------------

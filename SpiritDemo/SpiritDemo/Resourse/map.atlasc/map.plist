@@ -5,9 +5,9 @@
         <key>codeandweb</key>
         <dict>
             <key>generator</key>
-            <string>TexturePacker 4.6.1 - http://www.codeandweb.com/texturepacker</string>
+            <string>TexturePacker 4.4.0 - http://www.codeandweb.com/texturepacker</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:ca88412ce51cdfc45142a79b68ece9c0:f05007eb042361ceab1aac9871347479:b03925fc0c90278f891845352f119690$</string>
+            <string>$TexturePacker:SmartUpdate:be8fca0d2e18ce7b8462677d74bc38c7:1450033ef563697ed0cd1d75ea2d2369:b03925fc0c90278f891845352f119690$</string>
         </dict>
         <key>format</key>
         <string>APPL</string>
@@ -186,7 +186,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>lesson_light.png</string>
+                        <string>lesson_unuse.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>
@@ -234,7 +234,7 @@
                         <key>isFullyOpaque</key>
                         <false/>
                         <key>name</key>
-                        <string>lesson_unuse.png</string>
+                        <string>lesson_light.png</string>
                         <key>spriteOffset</key>
                         <string>{0,0}</string>
                         <key>spriteSourceSize</key>

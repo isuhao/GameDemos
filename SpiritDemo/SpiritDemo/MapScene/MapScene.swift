@@ -55,11 +55,25 @@ class MapScene: SKScene {
         
         //中间长岛
         for item in 1...stairNumber! {
+            
             let stair = IslandNode.init(texture: stairTexture)
             stair.position = CGPoint(x: (stairsLeading +  halfTextureWidth * CGFloat(item*2 - 1)),
                                      y: stairTexture.size().height/2 + stairsTop)
             self.stairsBack!.addChild(stair)
-            stair.setupBrook()
+            
+            stair.setupBrook() //添加流水
+            
+            //添加课程
+            let lesson = LessonModel()
+            lesson.item = 1;
+            lesson.position = CGPoint(x: 0, y: 0)
+            lesson.title = "测试"
+//            lesson.preparation = true
+//            lesson.homework = true
+//            lesson.handout = true
+//            lesson.clouse = true
+            lesson.done = true
+            stair.setupLesson(model: lesson)
             
             print("单岛frame：" + NSStringFromCGRect(stair.frame))
             print("单岛position：" + NSStringFromCGPoint(stair.position))
@@ -93,7 +107,7 @@ class MapScene: SKScene {
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touchPoint = touches.first?.location(in: self)
-        print(NSStringFromCGPoint((stairsBack?.position)!))
+//        print(NSStringFromCGPoint((stairsBack?.position)!))
         
         if let point = touchPoint {
             if lastTouchPoint_x != nil {

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6220C4AC1FF5484800356F46 /* mario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220C4AA1FF5484700356F46 /* mario.swift */; };
-		6220C4AD1FF5484800356F46 /* mario.atlasc in Resources */ = {isa = PBXBuildFile; fileRef = 6220C4AB1FF5484800356F46 /* mario.atlasc */; };
+		6220C4B31FF7739800356F46 /* BubbleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220C4B21FF7739800356F46 /* BubbleModel.swift */; };
+		6220C4B51FF77B5400356F46 /* StarNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220C4B41FF77B5400356F46 /* StarNode.swift */; };
+		6220C4B71FF77B6100356F46 /* StarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220C4B61FF77B6100356F46 /* StarModel.swift */; };
+		6220C4BA1FF77C5500356F46 /* SpriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6220C4B91FF77C5500356F46 /* SpriteNode.swift */; };
 		62C228191FDCC7C0009DAC16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C228181FDCC7C0009DAC16 /* AppDelegate.swift */; };
 		62C2281B1FDCC7C0009DAC16 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 62C2281A1FDCC7C0009DAC16 /* GameScene.sks */; };
 		62C2281D1FDCC7C0009DAC16 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 62C2281C1FDCC7C0009DAC16 /* Actions.sks */; };
@@ -28,8 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6220C4AA1FF5484700356F46 /* mario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mario.swift; sourceTree = "<group>"; };
-		6220C4AB1FF5484800356F46 /* mario.atlasc */ = {isa = PBXFileReference; lastKnownFileType = folder; path = mario.atlasc; sourceTree = "<group>"; };
+		6220C4B21FF7739800356F46 /* BubbleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleModel.swift; sourceTree = "<group>"; };
+		6220C4B41FF77B5400356F46 /* StarNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarNode.swift; sourceTree = "<group>"; };
+		6220C4B61FF77B6100356F46 /* StarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarModel.swift; sourceTree = "<group>"; };
+		6220C4B91FF77C5500356F46 /* SpriteNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteNode.swift; sourceTree = "<group>"; };
 		628AE9E11FDD122B00447B6E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		628AE9E21FDD297800447B6E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		628AE9E31FDD298300447B6E /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
@@ -68,6 +72,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6220C4B01FF7632D00356F46 /* MapScene */ = {
+			isa = PBXGroup;
+			children = (
+				CE2BF0121FF5D4E600F4B2EC /* MapScene.swift */,
+				6220C4B91FF77C5500356F46 /* SpriteNode.swift */,
+				6220C4B81FF77B8600356F46 /* Model */,
+				CE2BF0231FF6581D00F4B2EC /* BubbleNode.swift */,
+				6220C4B41FF77B5400356F46 /* StarNode.swift */,
+				CE2BF0211FF64C8F00F4B2EC /* IslandNode.swift */,
+				CE2BF0161FF5D4F000F4B2EC /* StairsNode.swift */,
+			);
+			path = MapScene;
+			sourceTree = "<group>";
+		};
+		6220C4B11FF7635000356F46 /* GameScene */ = {
+			isa = PBXGroup;
+			children = (
+				62C2281E1FDCC7C0009DAC16 /* GameScene.swift */,
+				62C2281A1FDCC7C0009DAC16 /* GameScene.sks */,
+				62C2281C1FDCC7C0009DAC16 /* Actions.sks */,
+			);
+			path = GameScene;
+			sourceTree = "<group>";
+		};
+		6220C4B81FF77B8600356F46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6220C4B21FF7739800356F46 /* BubbleModel.swift */,
+				6220C4B61FF77B6100356F46 /* StarModel.swift */,
+				CE2BF0251FF658F600F4B2EC /* LessonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		628AE9E01FDD122A00447B6E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,14 +142,8 @@
 			children = (
 				CE2BF02E1FF6774400F4B2EC /* Resourse */,
 				62C228181FDCC7C0009DAC16 /* AppDelegate.swift */,
-				62C2281A1FDCC7C0009DAC16 /* GameScene.sks */,
-				62C2281C1FDCC7C0009DAC16 /* Actions.sks */,
-				CE2BF0161FF5D4F000F4B2EC /* StairsNode.swift */,
-				CE2BF0231FF6581D00F4B2EC /* BubbleNode.swift */,
-				CE2BF0251FF658F600F4B2EC /* LessonModel.swift */,
-				CE2BF0211FF64C8F00F4B2EC /* IslandNode.swift */,
-				CE2BF0121FF5D4E600F4B2EC /* MapScene.swift */,
-				62C2281E1FDCC7C0009DAC16 /* GameScene.swift */,
+				6220C4B11FF7635000356F46 /* GameScene */,
+				6220C4B01FF7632D00356F46 /* MapScene */,
 				62C228201FDCC7C0009DAC16 /* GameViewController.swift */,
 				62C228221FDCC7C0009DAC16 /* Main.storyboard */,
 				62C228251FDCC7C0009DAC16 /* Assets.xcassets */,
@@ -135,8 +167,6 @@
 			children = (
 				CE2BF01F1FF5D5EA00F4B2EC /* MapTexture.swift */,
 				CE2BF0181FF5D56900F4B2EC /* map.atlasc */,
-				6220C4AA1FF5484700356F46 /* mario.swift */,
-				6220C4AB1FF5484800356F46 /* mario.atlasc */,
 			);
 			path = Resourse;
 			sourceTree = "<group>";
@@ -202,7 +232,6 @@
 			files = (
 				CE2BF01C1FF5D56A00F4B2EC /* map.plist in Resources */,
 				CE2BF01D1FF5D56A00F4B2EC /* map.1.png in Resources */,
-				6220C4AD1FF5484800356F46 /* mario.atlasc in Resources */,
 				62C228241FDCC7C0009DAC16 /* Main.storyboard in Resources */,
 				62C2281B1FDCC7C0009DAC16 /* GameScene.sks in Resources */,
 				62C228261FDCC7C0009DAC16 /* Assets.xcassets in Resources */,
@@ -223,10 +252,13 @@
 				CE2BF0201FF5D5EA00F4B2EC /* MapTexture.swift in Sources */,
 				CE2BF0241FF6581D00F4B2EC /* BubbleNode.swift in Sources */,
 				62C2281F1FDCC7C0009DAC16 /* GameScene.swift in Sources */,
+				6220C4BA1FF77C5500356F46 /* SpriteNode.swift in Sources */,
+				6220C4B51FF77B5400356F46 /* StarNode.swift in Sources */,
 				CE2BF0221FF64C8F00F4B2EC /* IslandNode.swift in Sources */,
 				62C228211FDCC7C0009DAC16 /* GameViewController.swift in Sources */,
+				6220C4B31FF7739800356F46 /* BubbleModel.swift in Sources */,
+				6220C4B71FF77B6100356F46 /* StarModel.swift in Sources */,
 				CE2BF0261FF658F600F4B2EC /* LessonModel.swift in Sources */,
-				6220C4AC1FF5484800356F46 /* mario.swift in Sources */,
 				62C228191FDCC7C0009DAC16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
