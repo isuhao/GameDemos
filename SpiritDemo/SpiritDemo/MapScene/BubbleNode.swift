@@ -31,6 +31,7 @@ class BubbleNode: SpriteNode {
     public convenience init(model: BubbleModel) {
         self.init()
         p_model = model
+        self.name = model.name
         
         //中间气泡，其他标注以气泡为准排布
         let bubble = SKSpriteNode(texture: sheet.bubble())

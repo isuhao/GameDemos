@@ -16,6 +16,8 @@ enum MarkState {
 
 class BubbleModel: NSObject {
     
+    var name: String?   //气泡名字
+    
     var stars: [StarModel]? //星星
     
     var title: String?      //标题

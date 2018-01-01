@@ -12,8 +12,8 @@ import SpriteKit
 class MapScene: SKScene {
     
     let stairsTop:      CGFloat = 768-543-62     //长岛上部距顶距离
-    let stairsLeading:  CGFloat = 71             //左部间隙
-    let stairsTrailing: CGFloat = 137             //右部间隙
+    let stairsLeading:  CGFloat = 100             //左部间隙
+    let stairsTrailing: CGFloat = 100             //右部间隙
     
     var stairsBack: SKShapeNode?        //长岛背景
     override func sceneDidLoad() {
@@ -27,7 +27,7 @@ class MapScene: SKScene {
         print("背景position：")
         print(NSStringFromCGPoint(back.position))
         
-        stairNumber = 6 //小岛数
+        stairNumber = 1 //小岛数
         //长岛背景
         let stairTexture = MapTexture().stair_stip()
         let halfTextureWidth = stairTexture.size().width/2
@@ -64,11 +64,13 @@ class MapScene: SKScene {
             stair.setupBrook() //添加流水
             
             //添加课程
+//            SKPhysicsBody
+//            SKPhysicsWorld
             let lesson = LessonModel()
             lesson.item = 1;
             lesson.position = CGPoint(x: 0, y: 0)
             lesson.title = "测试"
-//            lesson.preparation = true
+            lesson.preparation = true
 //            lesson.homework = true
 //            lesson.handout = true
 //            lesson.clouse = true
@@ -85,16 +87,42 @@ class MapScene: SKScene {
     var beginTouchPoint_x: CGFloat?
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touchPoint = touches.first?.location(in: self)
-        if let point = touchPoint {
-            beginTouchPoint_x = point.x
-            lastTouchPoint_x = nil
-            minPosition_x = MIN_POSITION_X
-            let transNumber = CGFloat(stairNumber!-1)
-            maxPosition_x = -(transNumber) * stairTextureWidth!
         
+        if let point = touchPoint {
+            bubbleAction(touch: point, touches: touches)
+            mapAction(touch: point)
         }
         
     }
+    
+    private func nodeAtPoint() -> SKSpriteNode? {
+        return SKSpriteNode()
+    }
+
+    private func bubbleAction(touch: CGPoint, touches: Set<UITouch>) {
+
+        for subNode in self.children {
+            if subNode.name == "测试" {
+                print("点击到了气泡！")
+            }
+        }
+        
+//        for subtouch in touches {
+//            let location = subtouch.location(in: self)
+//            if (nodeAtPoint()?.contains(location))! {
+//                print("点击到了气泡！")
+//            }
+//        }
+    }
+    
+    private func mapAction(touch: CGPoint) {
+        beginTouchPoint_x = touch.x
+        lastTouchPoint_x = nil
+        minPosition_x = MIN_POSITION_X
+        let transNumber = CGFloat(stairNumber!-1)
+        maxPosition_x = -(transNumber) * stairTextureWidth!
+    }
+    
     
     let MIN_POSITION_X: CGFloat = 0
     
@@ -108,6 +136,7 @@ class MapScene: SKScene {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touchPoint = touches.first?.location(in: self)
 //        print(NSStringFromCGPoint((stairsBack?.position)!))
+        
         
         if let point = touchPoint {
             if lastTouchPoint_x != nil {
