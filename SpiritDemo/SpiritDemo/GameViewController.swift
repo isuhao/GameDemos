@@ -26,6 +26,11 @@ class GameViewController: UIViewController {
             view.showsNodeCount = true
         }
         
+        let label = UILabel.init(frame: CGRect(x: 90, y: 90, width: 100, height: 40))
+        label.text = "这是一个测试的label"
+        label.backgroundColor = UIColor.orange
+        self.view.addSubview(label)
+        
         return;
         // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
